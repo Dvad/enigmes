@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div>
+<p style="font-size:30px, font-family: 'Noto Sans,sans-serif'" >
+SUCCESS!
+<br/>
+👫👩‍❤️‍👨➡️👰‍♀️💍🤵‍♂️
+<br/>
+👨‍🎓➡️🇫🇷✈️🇺🇸
+<br/>
+📖🍰➡️👩‍🍳
+<br/>
+🛏️🍆💦🍑🎯➡️👩‍⚕️
+<br/>
+</p>
+</div>
+
+<div id="f1_container" onclick="this.classList.toggle('hover');">
+<div id="f1_card">
+  <div class="front face">
+    <img src="{{ url_for('static', filename='final_letter.png')}}"/>
+  </div>
+  <div class="back face center">
+    <img src="{{ url_for('static', filename='🤰🧸🍼.png')}}"/>
+  </div>
+</div>
+</div>
+<p style="font-size:30px, font-family: 'Noto Sans,sans-serif'" >
+⬆️
+<br/>
+Notre informateur: 
+</p>
+<br/>
+
+<!--
+<a href="🤰🧸🍼.png"> <p style="font-size:30px"> SaveTheDate.png</p></a>
+<a href="🎥👶.mp4"> <p style="font-size:30px"> Teaser.mp4</p></a>
+-->
+ 
+{% endblock %}

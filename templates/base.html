@@ -1,0 +1,24 @@
+<meta charset="utf-8">
+<!doctype html>
+<title>Enigme</title>
+<head>
+<!-- "Hum, '://__>___/', serait-ce une adresse internet?-->
+{% block head %}
+<link rel="apple-touch-icon" sizes="180x180" href="{{ url_for('static', filename='favicon/apple-touch-icon.png')}}">
+<link rel="icon" type="image/png" sizes="32x32" href="{{ url_for('static', filename='favicon/favicon-32x32.png')}}">
+<link rel="icon" type="image/png" sizes="16x16" href="{{ url_for('static', filename='favicon/favicon-16x16.png')}}">
+{% endblock %}
+</head>
+
+<!-- 
+Don't look here, you will regret it.
+-->
+<!-- <script src="https://i❤️.ws/js/emojiurlifier.js"></script>
+<script>
+  emojiurlifier('http://xn--fz7hf0c.osurac.net', 'http://enigme.osurac.net');
+</script> -->
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}?v=3">
+<section class="content">
+{% block content %}{% endblock %}
+
+</section>

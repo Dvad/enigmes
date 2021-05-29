@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<!-- "Hum, '➡️=>'... est-ce une operation mathematique?" Alan Turing -->
+<p style="font-size:30px">
+{{ answer }}
+<br/>
+❌ Level {{ lvl }}
+<br/>
+<img id="failimg" src="{{ image_url }}" width="500" alt="Fail">
+<br/>
+<br/>
+<br/>
+{{ quote }}
+<p/>
+{% endblock %}

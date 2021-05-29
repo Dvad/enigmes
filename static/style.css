@@ -1,0 +1,54 @@
+body { font-size: 30px; max-width: 960px; margin: 0 auto; background: white; text-align: center }
+
+img.emoji {
+   height: 1em;
+   width: 1em;
+   margin: 0 .05em 0 .1em;
+   vertical-align: -0.1em;
+}
+
+
+#f1_container {
+  position: relative;
+  margin: 10px auto;
+  width: 800px;
+  height: 700px;
+  z-index: 1;
+  perspective: 2000px;
+
+}
+
+#f1_container.hover #f1_card {
+  transform: rotateY(-180deg);
+}
+
+#f1_card {
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: all 0.5s ease-out;
+}
+
+#f1_card img {
+    max-width: 100%;
+    max-height: 100%;
+    display: block; /* remove extra space below image */
+  box-shadow: 30px 30px 100px rgba(33,33,33,.8); 
+}
+#f1_card img:hover {
+  box-shadow: 30px 30px 100px rgba(33,33,66,1); 
+}
+.face {
+  position: absolute;
+  width: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+.face.back {
+  display: block;
+  transform: rotateY(180deg);
+}
+
+#failimg {
+  box-shadow: 30px 30px 100px rgba(33,33,33,.8); 
+}
